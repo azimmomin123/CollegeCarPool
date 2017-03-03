@@ -21,8 +21,9 @@ passport.use(new Strategy({
     // clientSecret: process.env.CLIENT_SECRET,
     clientID: keys.CLIENT_ID,
     clientSecret: keys.CLIENT_SECRET,
-    callbackURL: 'https://cryptic-ridge-77637.herokuapp.com/login/facebook/return'
-    ,profileFields: ['id', 'displayName', 'picture', 'email', 'education']
+    // callbackURL: 'https://cryptic-ridge-77637.herokuapp.com/login/facebook/return',
+    callbackURL: 'http://localhost:3000/login/facebook/return',
+    profileFields: ['id', 'displayName', 'picture', 'email', 'education']
   },
   function(accessToken, refreshToken, profile, cb) {
     // In this example, the user's Facebook profile is supplied as the user
