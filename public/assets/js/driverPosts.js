@@ -28,7 +28,7 @@
       $.post("/api/postride", newDriverPost,
         function(data) {
 
-        });
+
 
         // Clear the form when submitting
         // $("#depart-Address").val("");
@@ -43,5 +43,5 @@
         // $("#cost").val("");
         // $("#notes").val("");
         // $("#car-Make").val("");
-
+      });
     });
